@@ -148,7 +148,7 @@ angular.module('cgBusy').directive('cgBusy',['$compile','$templateCache','cgBusy
 
                 angular.extend(defaults,cgBusyDefaults);
 
-                scope.$watchCollection(attrs.cgBusy,function(options){
+                scope.$watch(attrs.cgBusy,function(options){
 
                     if (!options) {
                         options = {promise:null};
